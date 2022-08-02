@@ -21,7 +21,7 @@
               <label for="" class="col-sm-2 col-form-label">FIRSTNAME:<sup class="text-danger">*</sup> </label>
               <div class="col-sm-10">
                 <input type="text" class="form-control" id="inputfirstname" placeholder="firstname...">
-                <span id="firstnameerr"></span>
+                <span id="firstnameerr" class="text-danger"></span>
               </div>
             </div>
 
@@ -29,7 +29,7 @@
                 <label for="" class="col-sm-2 col-form-label">LASTNAME:<sup class="text-danger">*</sup> </label>
                 <div class="col-sm-10">
                   <input type="text" class="form-control" id="inputlastname" placeholder="lastname...">
-                  <span id="lastnameerr"></span>
+                  <span id="lastnameerr" class="text-danger"></span>
                 </div>
               </div>
 
@@ -37,7 +37,7 @@
                 <label for="" class="col-sm-2 col-form-label">E-MAIL:<sup class="text-danger">*</sup> </label>
                 <div class="col-sm-10">
                   <input type="text" class="form-control" id="inputemail" placeholder="e-mail...">
-                <span id="emailerr"></span>
+                <span id="emailerr" class="text-danger"></span>
 
                 </div>
               </div>
@@ -46,7 +46,7 @@
                 <label for="" class="col-sm-2 col-form-label">PASSWORD:<sup class="text-danger">*</sup> </label>
                 <div class="col-sm-10">
                   <input type="text" class="form-control" id="inputpassword" placeholder="password...">
-                <span id="passworderr"></span>
+                <ul id="passworderr" class="text-danger"></ul>
 
                 </div>
               </div>
@@ -55,7 +55,7 @@
                 <label for="" class="col-sm-2 col-form-label">CONFIRMPASSWORD:<sup class="text-danger">*</sup> </label>
                 <div class="col-sm-10">
                   <input type="text" class="form-control" id="inputconfirmpassword" placeholder="confirm-password...">
-                  <span id="confirmpassworderr"></span>
+                  <span id="confirmpassworderr" class="text-danger"></span>
                 
                 </div>
               </div>
@@ -64,7 +64,7 @@
                 <label for="" class="col-sm-2 col-form-label">PHONE-NUMBER:<sup class="text-danger">*</sup> </label>
                 <div class="col-sm-10">
                   <input type="text" class="form-control" id="inputphonenumber" maxlength="10"  placeholder="phone-number...">
-                  <span id="phonenumbererr"></span>
+                  <span id="phonenumbererr" class="text-danger"></span>
                 
                 </div>
               </div>
@@ -80,12 +80,12 @@
                     <input class="form-check-input" type="radio" name="male" id="inputgenderfemale" value="option2">
                     <label  class="form-check-label" for="inputgendermale">Female</label>
                   </div>
-             <div id="gendererr"></div>
+             <div id="gendererr" class="text-danger"></div>
                   </div>
                 </div>
         
         <div class="text-center">
-         <input class=" btn btn-primary" type="button" onclick="handlesubmit();return false" id="btn1" value="SUBMIT">
+         <input class=" btn btn-primary m-2" type="button" onclick="handlesubmit();return false" id="btn1" value="SUBMIT">
         </div>
         </form>
     </div>
