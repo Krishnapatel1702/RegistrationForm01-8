@@ -217,9 +217,7 @@ else{
     }
  }
 
-
- 
-function handlesubmit(){
+ function handlesubmit(){
     
     myfirstname();
     mylastname();
@@ -230,8 +228,11 @@ function handlesubmit(){
     mygender();
 
 
+    
    localStorage.setItem("personDetails",JSON.stringify(person));
    window.location.href = ("./login.html");
 
 }
+ 
+
    

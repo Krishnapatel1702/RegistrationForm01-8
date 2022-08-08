@@ -42,43 +42,43 @@
      
     </div>
  
-     <script>
+    <script>
      
-     let localval = JSON.parse(localStorage.getItem("personDetails"));
-     console.log(localval);
-     let loginFlag = localStorage.getItem("newlogin");
-     console.log(loginFlag);
- 
-     function logfun() {
-     if (loginFlag == "trueval"){
-        
-         window.location.href = "./mainpage.html";
-     }   
-        
-     }
- 
- 
- function loginsubmit(){
-     let emailtext = document.getElementById("loginemail").value;
-     let passwordtext = document.getElementById("loginpassword").value;
- 
-  
-     console.log(emailtext);
-     console.log(localval.logemail);
- 
- if (emailtext == localval.logemail && passwordtext == localval.logpassword){
-     localStorage.setItem("newlogin","trueval");
-     window.location.href = "./mainpage.html";
-  
- }
- else{
- 
-     document.getElementById("loginerr").innerHTML = "invalid email & password";
- }
- 
- }
- 
- 
-     </script>
+        let localval = JSON.parse(localStorage.getItem("personDetails"));
+        console.log(localval);
+        let loginFlag = localStorage.getItem("newlogin");
+        console.log(loginFlag);
+    
+        function logfun() {
+        if (loginFlag == "trueval"){
+           
+            window.location.href = "./mainpage.html";
+        }   
+           
+        }
+    
+    
+    function loginsubmit(){
+        let emailtext = document.getElementById("loginemail").value;
+        let passwordtext = document.getElementById("loginpassword").value;
+    
+     
+        console.log(emailtext);
+        console.log(localval.logemail);
+    
+    if (emailtext == localval.logemail && passwordtext == localval.logpassword){
+        localStorage.setItem("newlogin","trueval");
+        window.location.href = "./mainpage.html";
+     
+    }
+    else{
+    
+        document.getElementById("loginerr").innerHTML = "invalid email & password";
+    }
+    
+    }
+    
+    
+        </script>
  </body>
 </html>
