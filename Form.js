@@ -231,7 +231,7 @@ function handlesubmit(){
 
 
    localStorage.setItem("personDetails",JSON.stringify(person));
-//    window.location.href("./login.html");
+   window.location.href = ("./login.html");
 
 }
    
